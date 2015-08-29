@@ -43,3 +43,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :production do
+	gem 'rails_12factor'
+	gem 'pg'
+end
+
+group :development, :test do
+	gem 'sqlite3'
+end
