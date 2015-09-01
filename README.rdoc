@@ -29,4 +29,8 @@ Please feel free to use a different markup language if you do not plan to run
 
 
 
+<<<<<<< HEAD
 this update is for the benbranch branch to make sure that i can make updates and then merge back in final version
+=======
+this update is for the benbranch branch to make sure that i can make updates and then merge back in2
+>>>>>>> 95dd06cd1efe8df67c579ccdaa95b085872d21ea
