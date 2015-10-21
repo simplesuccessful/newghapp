@@ -11,6 +11,10 @@ p{
 	color: blue;
 }
 
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+	margin: 0 auto;
+}
+
 .masthead{
 	display: block;
 	margin: 0 auto;
