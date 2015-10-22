@@ -29,7 +29,7 @@ class ProductsController < ApplicationController
     respond_to do |format|
       if @product.save
         #format.html { redirect_to @product, notice: 'Product was successfully created.' }
-        format.html { redirect_to "/static_pages/landing_page" }
+        format.html { redirect_to "/static_pages/about"}
         format.json { render action: 'show', status: :created, location: @product }
       else
         format.html { render action: 'new' }
@@ -57,7 +57,8 @@ class ProductsController < ApplicationController
   def destroy
     @product.destroy
     respond_to do |format|
-      format.html { redirect_to products_url }
+      #format.html { redirect_to products_url }
+      format.html { redirect_to "/static_pages/about" }
       format.json { head :no_content }
     end
   end

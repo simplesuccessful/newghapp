@@ -2,7 +2,7 @@ Nameofapp::Application.routes.draw do
   resources :products
 
   get "static_pages/about"
-  get 'static_pages/contact', to: 'static_pages#contact' 
+  get "static_pages/contact"
   get "static_pages/index"
   get "static_pages/landing_page"
   # The priority is based upon order of creation: first created -> highest priority.
