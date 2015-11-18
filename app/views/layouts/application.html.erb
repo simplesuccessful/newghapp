@@ -51,7 +51,8 @@
       </form> -->
 
       <%= form_tag("/products", method: "get", class: "navbar-form navbar-left" ) do %>
-        <%= text_field_tag(:q ) %>
+        <%= text_field_tag(:q, nil, placeholder: 'Enter search term...')%>
+        
         <%= submit_tag("Search", class: "btn btn-default") %>
       <% end %>
     </div><!-- /.navbar-collapse -->

@@ -3,21 +3,11 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
-def index
-    if Rails.env.development? # sqlite3
-      @products = Product.all
-
-      if params[:q]
-        @products = @products.search(params[:q])
-      end
-    else # postgres
-      if params[:q]
-        search_term=params[:q]
-        @products = Product.where("name ilike ?", "%#{search_term}%")
-      else
-        @products = Product.all
-      end
-    end #end of environment check
+  def index
+    @products = Product.all
+    if params[:q]
+      @products = @products.search(params[:q])
+    end
   end
 
   # GET /products/1

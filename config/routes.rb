@@ -13,6 +13,8 @@ Nameofapp::Application.routes.draw do
 
    resources :orders, only: [:index, :show, :new, :create]
 
+   post 'static_pages/thank_you'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
